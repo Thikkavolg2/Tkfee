@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <title>වැටුප් පත්‍රිකා පද්ධතිය</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="payslip-container">
+        <h2>වැටුප් පත්‍රිකාව ලබාගන්න</h2>
+        
+        <input type="number" id="empId" placeholder="සේවක අංකය (ID) ඇතුලත් කරන්න">
+        <button onclick="generatePayslip()">පත්‍රිකාව පෙන්වන්න</button>
+
+        <!-- ප්‍රතිඵලය පෙන්වන කොටස (මුලින් සඟවා ඇත) -->
+        <div id="resultBox" style="display:none;">
+            <h3>සේවක නම: <span id="empName"></span></h3>
+            <p>මූලික වැටුප: රු. <span id="basicSalary"></span></p>
+            <p>දීමනා (+): රු. <span id="allowance"></span></p>
+            <p>අඩු කිරීම් (-): රු. <span id="deductions"></span></p>
+            <hr>
+            <h2>ශුද්ධ වැටුප: රු. <span id="netSalary"></span></h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
